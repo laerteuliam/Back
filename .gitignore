@@ -3,3 +3,11 @@
 ################################################################################
 
 /Api/bin
+/Api/obj/Debug
+/AutoMapperConfig/obj/Debug
+/EntityFrameworkConfig/obj/Debug
+/IOCConfig/obj/Debug
+/packages
+/ProjetoContext/obj/Debug
+/SharedKernel/obj/Debug
+/.vs
