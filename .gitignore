@@ -11,3 +11,8 @@
 /ProjetoContext/obj/Debug
 /SharedKernel/obj/Debug
 /.vs
+/AutoMapperConfig/bin/Debug
+/EntityFrameworkConfig/bin/Debug
+/IOCConfig/bin/Debug
+/ProjetoContext/bin/Debug
+/SharedKernel/bin/Debug

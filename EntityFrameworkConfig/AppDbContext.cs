@@ -1,4 +1,5 @@
 ﻿using ProjetoContext.DomainModels;
+using System.Configuration;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -11,7 +12,10 @@ namespace EntityFrameworkConfig
             Database.SetInitializer<AppDbContext>(null);
         }
 
-        public AppDbContext() : base(@"Data Source = (localdb)\MSSQLLocalDB; Integrated Security = true; Initial Catalog = BancoLaerteUliam")
+        public AppDbContext() 
+            //: base(@"Data Source = (localdb)\MSSQLLocalDB; Integrated Security = true; Initial Catalog = BancoLaerteUliam")
+            //: base(@"Server=localhost\SQLEXPRESS01;Database=BancoLaerteUliam;Trusted_Connection=True;")
+            :base(ConfigurationManager.AppSettings["Conexao"].ToString())
         {
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
